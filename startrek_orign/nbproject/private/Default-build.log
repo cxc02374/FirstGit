@@ -1,0 +1,12 @@
+dmake: 並列モードをデフォルトとして使用します。
+.dmakerc ファイルの設定については、dmake(1) のマニュアルページを参照してください。
+::(sst)
+CTCDEV004 --> 1 個のジョブ
+cc -O -DSCORE -DCAPTURE -DCLOAKING -Wno-unused-result -c sst.c
+CTCDEV004 --> 2 個のジョブ
+cc -O -DSCORE -DCAPTURE -DCLOAKING -Wno-unused-result -c finish.c
+CTCDEV004 --> ジョブ出力
+cc -O -DSCORE -DCAPTURE -DCLOAKING -Wno-unused-result -c sst.c
+cc: 不明なプログラム  W に対するオプション W
+*** エラーコード 1
+dmake: 致命的エラー: ターゲット `sst.o' の構築用コマンドが失敗しました。

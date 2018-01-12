@@ -1,0 +1,22 @@
+called: /opt/solarisstudio12.4/bin/cc
+	/export/home/frs/source/tmp/ito/StarTrekOrigin/source
+	cc
+	-O
+	-DSCORE
+	-DCAPTURE
+	-DCLOAKING
+	-Wno-unused-result
+	-c
+	sst.c
+
+called: /opt/solarisstudio12.4/bin/cc
+	/export/home/frs/source/tmp/ito/StarTrekOrigin/source
+	cc
+	-O
+	-DSCORE
+	-DCAPTURE
+	-DCLOAKING
+	-Wno-unused-result
+	-c
+	finish.c
+
